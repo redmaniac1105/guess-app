@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form">
+        <div class="title">Welcome</div>
+        <div class="subtitle">Enter number between 1- 100 to win lottery</div>
+        <form action="/lottery" method="post">
+            <div class="input-container ic1">
+                <input id="num" class="input" type="text" placeholder=" " name="num"/>
+                <div class="cut"></div>
+                <label for="firstname" class="placeholder">Number</label>
+              </div>
+              <button type="submit" class="submit">Submit</button>
+            </div>
+        </form>
+</body>
+</html>
